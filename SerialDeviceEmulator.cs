@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TorrconEmulator;
+using SerialDeviceManager.Forms;
 
 namespace SerialDeviceManager
 {
@@ -58,6 +59,12 @@ namespace SerialDeviceManager
 		private void SerialDeviceEmulator_MouseUp(object sender, MouseEventArgs e)
 		{
 			mouseDown = false;
+		}
+
+		private void scannerButton_Click(object sender, EventArgs e)
+		{
+			Form scan = new ScannerEmulator();
+			scan.Show();
 		}
 	}
 }

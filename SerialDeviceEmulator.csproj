@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>serialEmuIcon.ico</ApplicationIcon>
+    <ApplicationIcon>serialEmuIcon2.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ScannerEmulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScannerEmulator.designer.cs">
+      <DependentUpon>ScannerEmulator.cs</DependentUpon>
+    </Compile>
     <Compile Include="SerialDeviceEmulator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ScannerEmulator.resx">
+      <DependentUpon>ScannerEmulator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SerialDeviceEmulator.resx">
       <DependentUpon>SerialDeviceEmulator.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,10 +112,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\serialEmuIcon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="serialEmuIcon.ico" />
+    <None Include="Resources\serialEmuIcon2.ico" />
+    <None Include="Resources\ScannerIcon.png" />
+    <Content Include="serialEmuIcon2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

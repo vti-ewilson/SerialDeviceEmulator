@@ -61,11 +61,31 @@ namespace SerialDeviceManager.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MISC25 {
+            get {
+                object obj = ResourceManager.GetObject("MISC25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ScannerIcon {
+            get {
+                object obj = ResourceManager.GetObject("ScannerIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon serialEmuIcon {
+        internal static System.Drawing.Icon serialEmuIcon2 {
             get {
-                object obj = ResourceManager.GetObject("serialEmuIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("serialEmuIcon2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

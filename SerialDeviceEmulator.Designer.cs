@@ -31,6 +31,10 @@
 			this.SMCFormButton = new System.Windows.Forms.Button();
 			this.TorrconFormButton = new System.Windows.Forms.Button();
 			this.CloseButton = new System.Windows.Forms.Button();
+			this.scannerButton = new System.Windows.Forms.Button();
+			this.TorrconLabel = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// SMCFormButton
@@ -41,9 +45,9 @@
 			this.SMCFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.SMCFormButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.SMCFormButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.SMCFormButton.Location = new System.Drawing.Point(629, 85);
+			this.SMCFormButton.Location = new System.Drawing.Point(466, 75);
 			this.SMCFormButton.Name = "SMCFormButton";
-			this.SMCFormButton.Size = new System.Drawing.Size(89, 131);
+			this.SMCFormButton.Size = new System.Drawing.Size(99, 131);
 			this.SMCFormButton.TabIndex = 11;
 			this.SMCFormButton.UseVisualStyleBackColor = false;
 			this.SMCFormButton.Click += new System.EventHandler(this.SMCFormButton_Click);
@@ -56,7 +60,7 @@
 			this.TorrconFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.TorrconFormButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.TorrconFormButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.TorrconFormButton.Location = new System.Drawing.Point(295, 85);
+			this.TorrconFormButton.Location = new System.Drawing.Point(164, 85);
 			this.TorrconFormButton.Name = "TorrconFormButton";
 			this.TorrconFormButton.Size = new System.Drawing.Size(121, 121);
 			this.TorrconFormButton.TabIndex = 10;
@@ -78,12 +82,61 @@
 			this.CloseButton.UseVisualStyleBackColor = false;
 			this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
 			// 
+			// scannerButton
+			// 
+			this.scannerButton.BackColor = System.Drawing.Color.Transparent;
+			this.scannerButton.BackgroundImage = global::SerialDeviceManager.Properties.Resources.ScannerIcon;
+			this.scannerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.scannerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.scannerButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.scannerButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.scannerButton.Location = new System.Drawing.Point(750, 75);
+			this.scannerButton.Name = "scannerButton";
+			this.scannerButton.Size = new System.Drawing.Size(89, 131);
+			this.scannerButton.TabIndex = 12;
+			this.scannerButton.UseVisualStyleBackColor = false;
+			this.scannerButton.Click += new System.EventHandler(this.scannerButton_Click);
+			// 
+			// TorrconLabel
+			// 
+			this.TorrconLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TorrconLabel.Location = new System.Drawing.Point(164, 206);
+			this.TorrconLabel.Name = "TorrconLabel";
+			this.TorrconLabel.Size = new System.Drawing.Size(121, 43);
+			this.TorrconLabel.TabIndex = 13;
+			this.TorrconLabel.Text = "Torrcon";
+			this.TorrconLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label1
+			// 
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(466, 206);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(99, 43);
+			this.label1.TabIndex = 14;
+			this.label1.Text = "SMC";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label2
+			// 
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(726, 209);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(137, 43);
+			this.label2.TabIndex = 15;
+			this.label2.Text = "Scanner";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
 			// SerialDeviceEmulator
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DimGray;
 			this.ClientSize = new System.Drawing.Size(1019, 313);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.TorrconLabel);
+			this.Controls.Add(this.scannerButton);
 			this.Controls.Add(this.SMCFormButton);
 			this.Controls.Add(this.TorrconFormButton);
 			this.Controls.Add(this.CloseButton);
@@ -103,6 +156,10 @@
 		private System.Windows.Forms.Button CloseButton;
 		private System.Windows.Forms.Button TorrconFormButton;
 		private System.Windows.Forms.Button SMCFormButton;
+		private System.Windows.Forms.Button scannerButton;
+		private System.Windows.Forms.Label TorrconLabel;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label2;
 	}
 }
 
