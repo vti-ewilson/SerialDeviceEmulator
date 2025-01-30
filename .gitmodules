@@ -1,0 +1,6 @@
+[submodule "Forms/TorrconEmulator"]
+	path = Forms/TorrconEmulator
+	url = git@github.com:vti-ewilson/TorrconEmulator.git
+[submodule "Forms/SMCEmulator"]
+	path = Forms/SMCEmulator
+	url = git@github.com:vti-ewilson/SMCEmulator.git
