@@ -35,6 +35,8 @@
 			this.TorrconLabel = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// SMCFormButton
@@ -75,7 +77,7 @@
 			this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.CloseButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.CloseButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.CloseButton.Location = new System.Drawing.Point(967, 12);
+			this.CloseButton.Location = new System.Drawing.Point(1239, 12);
 			this.CloseButton.Name = "CloseButton";
 			this.CloseButton.Size = new System.Drawing.Size(40, 42);
 			this.CloseButton.TabIndex = 9;
@@ -127,12 +129,39 @@
 			this.label2.Text = "Scanner";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
+			// label3
+			// 
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(982, 209);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(137, 43);
+			this.label3.TabIndex = 17;
+			this.label3.Text = "Ram";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// button1
+			// 
+			this.button1.BackColor = System.Drawing.SystemColors.Control;
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.button1.Location = new System.Drawing.Point(1006, 75);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(89, 131);
+			this.button1.TabIndex = 16;
+			this.button1.Text = "Ram";
+			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
 			// SerialDeviceEmulator
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DimGray;
-			this.ClientSize = new System.Drawing.Size(1019, 313);
+			this.ClientSize = new System.Drawing.Size(1291, 313);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.TorrconLabel);
@@ -160,6 +189,8 @@
 		private System.Windows.Forms.Label TorrconLabel;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Button button1;
 	}
 }
 

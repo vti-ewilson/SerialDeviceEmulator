@@ -102,6 +102,10 @@
     <None Include="Resources\tcemuicon2.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Forms\RamEmulator\RamEmulator.csproj">
+      <Project>{F0D3519D-7351-4ED4-8416-8602958EAE8C}</Project>
+      <Name>RamEmulator</Name>
+    </ProjectReference>
     <ProjectReference Include="Forms\SMCEmulator\SMCEmulator.csproj">
       <Project>{b5bcc39e-c9bb-4803-bf65-3af36f0f1729}</Project>
       <Name>SMCEmulator</Name>

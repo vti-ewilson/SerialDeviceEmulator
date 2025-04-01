@@ -4,3 +4,6 @@
 [submodule "Forms/SMCEmulator"]
 	path = Forms/SMCEmulator
 	url = git@github.com:vti-ewilson/SMCEmulator.git
+[submodule "Forms/RamEmulator"]
+	path = Forms/RamEmulator
+	url = git@github.com:vti-ewilson/RamEmulator.git

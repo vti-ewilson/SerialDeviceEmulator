@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TorrconEmulator;
 using SerialDeviceManager.Forms;
+using RamEmulator;
 
 namespace SerialDeviceManager
 {
@@ -65,6 +66,12 @@ namespace SerialDeviceManager
 		{
 			Form scan = new ScannerEmulator();
 			scan.Show();
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			Form ram = new RamEmulatorForm();
+			ram.Show();
 		}
 	}
 }
