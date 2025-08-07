@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TorrconEmulator;
 using SerialDeviceManager.Forms;
 using RamEmulator;
 
@@ -30,7 +29,7 @@ namespace SerialDeviceManager
 
 		private void TorrconFormButton_Click(object sender, EventArgs e)
 		{
-			Form tc = new TorrconEmulator.TorrconEmulator();
+			Form tc = new LDS3000Emulator();
 			tc.Show();
 		}
 
@@ -72,6 +71,12 @@ namespace SerialDeviceManager
 		{
 			Form ram = new RamEmulatorForm();
 			ram.Show();
+		}
+
+		private void LDS3000Button_Click(object sender, EventArgs e)
+		{
+			Form lds = new LDS3000Emulator();
+			lds.Show();
 		}
 	}
 }

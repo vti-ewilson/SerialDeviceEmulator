@@ -37,6 +37,8 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
+			this.label4 = new System.Windows.Forms.Label();
+			this.LDS3000Button = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// SMCFormButton
@@ -77,7 +79,7 @@
 			this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.CloseButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.CloseButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.CloseButton.Location = new System.Drawing.Point(1239, 12);
+			this.CloseButton.Location = new System.Drawing.Point(1407, 12);
 			this.CloseButton.Name = "CloseButton";
 			this.CloseButton.Size = new System.Drawing.Size(40, 42);
 			this.CloseButton.TabIndex = 9;
@@ -141,7 +143,8 @@
 			// 
 			// button1
 			// 
-			this.button1.BackColor = System.Drawing.SystemColors.Control;
+			this.button1.BackColor = System.Drawing.Color.Transparent;
+			this.button1.BackgroundImage = global::SerialDeviceManager.Properties.Resources.ramicon;
 			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,16 +153,41 @@
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(89, 131);
 			this.button1.TabIndex = 16;
-			this.button1.Text = "Ram";
 			this.button1.UseVisualStyleBackColor = false;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// label4
+			// 
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(1210, 209);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(137, 43);
+			this.label4.TabIndex = 19;
+			this.label4.Text = "LDS3000";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// LDS3000Button
+			// 
+			this.LDS3000Button.BackColor = System.Drawing.Color.White;
+			this.LDS3000Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.LDS3000Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.LDS3000Button.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LDS3000Button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.LDS3000Button.Location = new System.Drawing.Point(1234, 75);
+			this.LDS3000Button.Name = "LDS3000Button";
+			this.LDS3000Button.Size = new System.Drawing.Size(89, 131);
+			this.LDS3000Button.TabIndex = 18;
+			this.LDS3000Button.UseVisualStyleBackColor = false;
+			this.LDS3000Button.Click += new System.EventHandler(this.LDS3000Button_Click);
 			// 
 			// SerialDeviceEmulator
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DimGray;
-			this.ClientSize = new System.Drawing.Size(1291, 313);
+			this.ClientSize = new System.Drawing.Size(1459, 313);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.LDS3000Button);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label2);
@@ -191,6 +219,8 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Button LDS3000Button;
 	}
 }
 

@@ -73,6 +73,16 @@ namespace SerialDeviceManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ramicon {
+            get {
+                object obj = ResourceManager.GetObject("ramicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ScannerIcon {
             get {
                 object obj = ResourceManager.GetObject("ScannerIcon", resourceCulture);
