@@ -29,7 +29,7 @@ namespace SerialDeviceManager
 
 		private void TorrconFormButton_Click(object sender, EventArgs e)
 		{
-			Form tc = new LDS3000Emulator();
+			Form tc = new TorrconEmulator.TorrconEmulator();
 			tc.Show();
 		}
 
